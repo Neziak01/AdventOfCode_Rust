@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PadelPro Shop — Raquettes de padel</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <div class="logo">PadelPro Shop</div>
+        <div class="nav-links">
+          <a href="#catalogue">Catalogue</a>
+          <a href="#offres">Offres</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="cart-button" id="open-cart">
+          Panier <span id="cart-count">0</span>
+        </button>
+      </nav>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="badge">Nouveau</p>
+          <h1>Les meilleures raquettes de padel pour tous les niveaux</h1>
+          <p>
+            Découvrez une sélection premium, testée par des coachs, avec livraison 48h et retours
+            faciles.
+          </p>
+          <div class="hero-actions">
+            <a class="primary" href="#catalogue">Voir le catalogue</a>
+            <a class="secondary" href="#offres">Offres du moment</a>
+          </div>
+          <div class="hero-highlights">
+            <div>
+              <strong>4.9/5</strong>
+              <span>Avis clients</span>
+            </div>
+            <div>
+              <strong>Livraison 48h</strong>
+              <span>Gratuite dès 120€</span>
+            </div>
+            <div>
+              <strong>14 jours</strong>
+              <span>Pour essayer</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Pack signature</h3>
+          <p>Raquette + housse + surgrips.</p>
+          <div class="price-tag">219 €</div>
+          <button class="primary add-to-cart" data-product="Pack signature" data-price="219">
+            Ajouter au panier
+          </button>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="catalogue" class="section">
+        <div class="section-title">
+          <h2>Catalogue de raquettes</h2>
+          <p>Choisissez votre style de jeu : contrôle, puissance ou polyvalence.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=700&q=80" alt="Raquette de padel contrôle" />
+            <div class="product-info">
+              <h3>Control Pro 3K</h3>
+              <p>Pour les joueurs tactiques. Forme ronde, sweet spot large.</p>
+              <div class="product-meta">
+                <span class="price">179 €</span>
+                <span class="tag">Contrôle</span>
+              </div>
+              <button class="secondary add-to-cart" data-product="Control Pro 3K" data-price="179">
+                Ajouter au panier
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1509223197845-458d87318791?auto=format&fit=crop&w=700&q=80" alt="Raquette de padel puissance" />
+            <div class="product-info">
+              <h3>Power Blast Carbon</h3>
+              <p>Explosion de puissance, cadre carbone 12K, équilibre en tête.</p>
+              <div class="product-meta">
+                <span class="price">229 €</span>
+                <span class="tag">Puissance</span>
+              </div>
+              <button class="secondary add-to-cart" data-product="Power Blast Carbon" data-price="229">
+                Ajouter au panier
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=700&q=80" alt="Raquette de padel polyvalente" />
+            <div class="product-info">
+              <h3>Allround Flow</h3>
+              <p>Polyvalence totale, mousse EVA Soft, maniabilité premium.</p>
+              <div class="product-meta">
+                <span class="price">199 €</span>
+                <span class="tag">Polyvalence</span>
+              </div>
+              <button class="secondary add-to-cart" data-product="Allround Flow" data-price="199">
+                Ajouter au panier
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="offres" class="section offers">
+        <div class="offers-content">
+          <h2>Offres du moment</h2>
+          <p>
+            -15% sur la première commande avec le code <strong>PADEL15</strong>. Pack duo
+            disponible pour les clubs et les familles.
+          </p>
+          <ul>
+            <li>Raquette + surgrip offert dès 2 raquettes.</li>
+            <li>Conseils personnalisés via chat coach.</li>
+            <li>Programme fidélité : 1 point = 1€.</li>
+          </ul>
+        </div>
+        <div class="offers-card">
+          <h3>Pack Duo Club</h3>
+          <p>Deux raquettes au choix + housses premium.</p>
+          <div class="price-tag">379 €</div>
+          <button class="primary add-to-cart" data-product="Pack Duo Club" data-price="379">
+            Ajouter au panier
+          </button>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div>
+          <h2>Besoin de conseils ?</h2>
+          <p>Nos experts padel répondent en moins de 10 minutes.</p>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Nom complet" required />
+          <input type="email" placeholder="Email" required />
+          <select required>
+            <option value="">Niveau de jeu</option>
+            <option value="debutant">Débutant</option>
+            <option value="intermediaire">Intermédiaire</option>
+            <option value="avance">Avancé</option>
+          </select>
+          <button type="submit" class="secondary">Demander un conseil</button>
+        </form>
+      </section>
+    </main>
+
+    <aside class="cart-panel" id="cart-panel" aria-hidden="true">
+      <div class="cart-header">
+        <h2>Votre panier</h2>
+        <button id="close-cart" aria-label="Fermer le panier">✕</button>
+      </div>
+      <div id="cart-items" class="cart-items">
+        <p class="empty">Votre panier est vide.</p>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <strong id="cart-total">0 €</strong>
+        </div>
+        <button class="primary">Passer au paiement</button>
+      </div>
+    </aside>
+
+    <script src="app.js"></script>
+  </body>
+</html>
